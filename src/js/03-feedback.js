@@ -20,7 +20,6 @@ function onFormSubmit(e) {
   if (refs.inpit.email.value === '' || refs.inpit.message.value === '') {
     return alert('Please fill in all the fields!');
   }
-  //   console.log(formData);
   // console.log('We send your application');
   e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
