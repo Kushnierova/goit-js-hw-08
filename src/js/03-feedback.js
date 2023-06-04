@@ -32,7 +32,7 @@ function onFormInput(e) {
 function populateTextarea() {
   const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
-  if (savedMessage) {
+  if (savedMessage)  {
     refs.textarea.value = savedMessage.message || '';
     refs.inpit.value = savedMessage.email || '';
   }
